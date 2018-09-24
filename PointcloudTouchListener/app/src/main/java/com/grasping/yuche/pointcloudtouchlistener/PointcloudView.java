@@ -197,4 +197,8 @@ public class PointcloudView extends GLSurfaceView implements NodeMain{
     public void onError(Node node, Throwable throwable) {
 
     }
+
+    public void setRenderAngle(float Amizuth, float Pitch, float Roll){
+        mRenderer.setVRAngle(Amizuth,Pitch,Roll);
+    }
 }
