@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/res/anim/abc_slide_in_bottom.xml"
+    }
+]

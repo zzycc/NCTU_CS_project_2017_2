@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/77a2e99e9c3481327a35aac61f44fe8d6d54c304/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_4c7d2b56100c4f733d81ebabaff735f6e68bce92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.ws.commons/ws-commons-util/1.0.1/126e80ff798fece634bc94e61f8be8a8da00be60/ws-commons-util-1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="126e80ff798fece634bc94e61f8be8a8da00be60">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/ws-commons-util-1.0.1_c52328c61c2a2e05ca4bdf1883a493d950caf70d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_server/0.3.5/131944a67ea232fe8c64b9ef3223be2e0070ad2b/apache_xmlrpc_server-0.3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="131944a67ea232fe8c64b9ef3223be2e0070ad2b">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/apache_xmlrpc_server-0.3.5_4ca1d147c08a4aab2f1f7ab97555713413f17872.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/diagnostic_msgs/1.12.6/a894300247fdc6a93b099c6134235e1b534dd1ca/diagnostic_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a894300247fdc6a93b099c6134235e1b534dd1ca">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/diagnostic_msgs-1.12.6_f58cfc09ea2af874e053fb6c1ef4d0021e497225.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/6a7a80b19810b80cde2248b2e66206e212b67501/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_7948e1f20ca04eec66b29ff0902f03617db4619c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/5ca6579e5c72f5b1f253ab05a45031631ffbbe88/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="17b10da21ea6c02e1f21c43399ea62e65ab22cc3">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_6ea0deb8cbb55fca1ed0e7057c7e64ffe28614b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_bootstrap/message_generation/0.3.0/5141e448f0ea6a2d6f539219d4fc9b296ff07ca4/message_generation-0.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5141e448f0ea6a2d6f539219d4fc9b296ff07ca4">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/message_generation-0.3.0_1244b97e1bcd1e34905dc6931473dbd896d51917.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/d3fa80161fced671b267163e3186e0d9e0a8fc5a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_c43b1f500253dab08bd7d70dc36845eb1fc3bfd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/geometry_msgs/1.12.6/ecae6c78bd0c70d205a801c21f08fb5f6f7cc918/geometry_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecae6c78bd0c70d205a801c21f08fb5f6f7cc918">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/geometry_msgs-1.12.6_108a696ae64ab251e637cc95859d4dd3a26b5199.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/sensor_msgs/1.12.6/9dd5b2c2cd2e2e65a6968d312fab2941c1e0ded4/sensor_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9dd5b2c2cd2e2e65a6968d312fab2941c1e0ded4">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/sensor_msgs-1.12.6_263896a0b1a69230348cdc37c0ddcf44867cb51f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.httpclient/3.1.0/c493a925a091ac3d8f449d9265fe12482dabb2a7/com.springsource.org.apache.commons.httpclient-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c493a925a091ac3d8f449d9265fe12482dabb2a7">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.httpclient-3.1.0_e732d52ebdca99066acdfd69b1b26f25ba6f21ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.lang/2.4.0/686e3713650c8e3a5d98723b4d3e239586bf9822/com.springsource.org.apache.commons.lang-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="686e3713650c8e3a5d98723b4d3e239586bf9822">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.lang-2.4.0_85cf624c248aefd33d1eb47bb38824646ba2012c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/7657caf2c78e1d79c74d36f2ae128a115f7cc180/com.springsource.org.apache.commons.logging-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7657caf2c78e1d79c74d36f2ae128a115f7cc180">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.logging-1.1.1_25b0bbcf9a6e0bca9b17a2377ea6d4aa52cd0d01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_common/0.3.5/f5de19f4f6ee9a84f08e27255f1baaa69401a979/apache_xmlrpc_common-0.3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f5de19f4f6ee9a84f08e27255f1baaa69401a979">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/apache_xmlrpc_common-0.3.5_3b737d96a95fd83473c14ee6fb5cfc9e02d76163.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/dnsjava/dnsjava/2.1.1/5708df81cf6dbff545695f0be6380b7bbc85accc/dnsjava-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5708df81cf6dbff545695f0be6380b7bbc85accc">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/dnsjava-2.1.1_fd9e5679295174ee87b0224038fe4ccec730ab28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_44225740022726f71deb11eccf1c6b0e4377ccf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/rosjava/0.3.5/7320e6ff76abf066da6850f44f3dcb05f890e043/rosjava-0.3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7320e6ff76abf066da6850f44f3dcb05f890e043">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/rosjava-0.3.5_8d58355c8818b97e5dea5962174b3a5bc1407af9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/nav_msgs/1.12.6/f3896ddeabfda97cb5b297f52b88a1fe30e689f1/nav_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3896ddeabfda97cb5b297f52b88a1fe30e689f1">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/nav_msgs-1.12.6_add95c3f2d9cf3a719b8a0eadf6d874e5767c01a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/jsr305-1.3.9_6ef931b632914df114da8dbda0c699e5e47eeeb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.5.2.Final/e6fb74a0699abe108969b2ec1f269391169a0426/netty-3.5.2.Final.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e6fb74a0699abe108969b2ec1f269391169a0426">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/netty-3.5.2.Final_185dd35cadc68e38f3c49fb702d117c45c1b00ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_bootstrap/gradle_plugins/0.3.0/9915d897f3b5049e99b268068978a1bca0ae7b5d/gradle_plugins-0.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9915d897f3b5049e99b268068978a1bca0ae7b5d">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/gradle_plugins-0.3.0_d87a9d46ff4b095cfbc25b5310729144ff28277c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/d058bcaf8982c9c454c05f28842e6d622c0bd993/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa7b53a48f07db693569e9f22bb53b6e8d684123">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_656ffb8efffc5e9c44eca1eb1307307eccc6d11d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/db5c001efc6ee77ee09e00994c4c56907fc8ed6d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_f42b65583bbeb63388dbfde586dfe69f5237a8dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/rosgraph_msgs/1.11.2/cc43a8148a2af597bd1d1813c809be07850b2e2b/rosgraph_msgs-1.11.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cc43a8148a2af597bd1d1813c809be07850b2e2b">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/rosgraph_msgs-1.11.2_b286d378516838795d6d5c0a28b5fbef1f2cd4a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/rosjava_test_msgs/0.3.0/d9363dfd06d4da93b11b186263036dab8cfa7aa5/rosjava_test_msgs-0.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9363dfd06d4da93b11b186263036dab8cfa7aa5">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/rosjava_test_msgs-0.3.0_830a22a87eeb67428075c8fba95468134a921bdc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.io/1.4.0/51097cd000ec88214ff181c9f059947de1cf4a35/com.springsource.org.apache.commons.io-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51097cd000ec88214ff181c9f059947de1cf4a35">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.io-1.4.0_ffcfc8e30f5143c95ad89e00379267f7741568a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/std_msgs/0.5.11/a0191f0506dfecfc471eb199a119691717801c0e/std_msgs-0.5.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a0191f0506dfecfc471eb199a119691717801c0e">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/std_msgs-0.5.11_cc7daf6943aaec754372916c13af252c6a8cf923.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/331dec7c0a9982e3bfcee1ff6a03a1c013a77494/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_368a0d9420ccf7fa2f4bdae62dca7b8717e998e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/37dce5ccb98e327dbe92f3b9596d854bfc189e89/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_f71724c1bddeed48dcd8ded79036b3f7d9ef2900.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_182d892300dc26f15fefbb219ba8078860d0d8c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_client/0.3.5/71e810ad6cb0d81a75737accb2863e170f59c142/apache_xmlrpc_client-0.3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="71e810ad6cb0d81a75737accb2863e170f59c142">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/apache_xmlrpc_client-0.3.5_72d8562e07e1391eaf4eed5bc27ad63735db0194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/actionlib_msgs/1.12.6/fd060c1c6d0758b9c230a155c9e805dd713ace01/actionlib_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fd060c1c6d0758b9c230a155c9e805dd713ace01">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/actionlib_msgs-1.12.6_499a7f12d0fda44e17a9ada363e4825b328937e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_a61c84d028ecf0945b59438245ba00ba27b6d68c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/rosjava_geometry/0.3.5/b9f85e52141b00356efbb0eebe3f2fd9988a8be4/rosjava_geometry-0.3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9f85e52141b00356efbb0eebe3f2fd9988a8be4">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/rosjava_geometry-0.3.5_c010d123fa91fde3f235bb0884da6f990becc24d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="287a013fcfef1565ba29072b3840fa510a12bab5">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fc458546a3a1a32dd2ce494d6112bc7b2927e330/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/6c1a319550826ba25cab17d3ad7308b4d7be8286/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_5f350f09d665f0bf4b8eb83bbcef41076ee95855.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/visualization_msgs/1.12.6/8e1941f2165174de4c74e2651a7c3b506a393271/visualization_msgs-1.12.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e1941f2165174de4c74e2651a7c3b506a393271">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/visualization_msgs-1.12.6_159ac122d12fc03b230efd2c063aa7acd5e91188.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/3cff1cabe56e6f49f97d33b8d217ec95efc4f053/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb70427fcf40847ab9c77b168dddc3183daf0c1e">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_7900192ed0f3978dba18a19d04c8e168e82b2298.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/d99ec40cdc7a0acfc74a68951000bf855753afce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_a8ba687b78cef5d2ab00294ebdd23b23f9d32288.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/ad40ea5b704850a90ff4b7e138571ef78ffcc817/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_f2effacedd215e18ec307cbb056a7860e5958fb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.codec/1.3.0/a7c156ef67bdc69ae36a9c70adf7b8ca2633132c/com.springsource.org.apache.commons.codec-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a7c156ef67bdc69ae36a9c70adf7b8ca2633132c">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.codec-1.3.0_bb789465a29f67f45896f0a420be33ca4b1838dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.net/2.0.0/3e78766072ff5a5cf3f5431d973c430c94ec612/com.springsource.org.apache.commons.net-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03e78766072ff5a5cf3f5431d973c430c94ec612">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.net-2.0.0_e25fb5fb8453314b4c206853ffde654d6a2bca9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/4572d589699f09d866a226a14b7f4323c6d8f040/commons-pool-1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4572d589699f09d866a226a14b7f4323c6d8f040">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/commons-pool-1.6_5875b8304b7df2460e6868a134becbc78fa0fb71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.android/build-cache/0b44e67d2591150c7f223befdcbfffa3b1f7893f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/classes_e13dedc76c76be81727cba95cd2fe674dc38cb64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/tf2_msgs/0.5.17/85685992e3e9d496952670366f17187beba543c8/tf2_msgs-0.5.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85685992e3e9d496952670366f17187beba543c8">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/tf2_msgs-0.5.17_3b3c9c95145393a330eb1aa61c143917badca2c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yuche/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/12.0/5bc66dd95b79db1e437eb08adba124a3e4088dc0/guava-12.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5bc66dd95b79db1e437eb08adba124a3e4088dc0">
+        <dex dex="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/pre-dexed/debug/guava-12.0_ce924af53eaabc32f389ccf48c0bedf2a62c135a.jar" />
+    </item>
+
+</items>

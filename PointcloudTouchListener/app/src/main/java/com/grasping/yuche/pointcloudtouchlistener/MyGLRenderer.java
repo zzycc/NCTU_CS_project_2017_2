@@ -24,7 +24,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private Vertices pc;
     private int vbcapacity;//pointcloud's vertices num *xyzw
     private float azimuth, pitch, roll; //The three angle value is in radian
-
+    private float centerx,centery,centerz,upx,upy,upz;
 
     public void  onSurfaceCreated(GL10 unused, EGLConfig config){
         //set the background frame color
@@ -41,7 +41,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
         GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT);
         // Set the camera position (View matrix)
-        Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0f, (float)Math.sin(azimuth), 0f,(float)Math.cos(azimuth), 0.0f, -1.0f, 0.0f);
+        setLookAtVector();
+        Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, centerx, centery, centerz, upx, upy, upz);
+        //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, centerx, centery, centerz, 0.0f, -1.0f, 0.0f);
+        //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, 0.0f, 0.0f, 3.0f, 0.0f, -1.0f, 0.0f);
 
         // Calculate the projection and view transformation
         Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
@@ -120,13 +123,47 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
             Log.i("WorldCoordinate point", "WCx: "+String.valueOf(pcWorldCoord[targetindex])+" WCy: "+String.valueOf(pcWorldCoord[targetindex+1])+" WCz: "+String.valueOf(pcWorldCoord[targetindex+2])+" WCw: "+String.valueOf(pcWorldCoord[targetindex+3]));
         }
     }
-    public void setVRAngle (float Amizuth, float Pitch, float Roll){
-        azimuth = Highpassfilter(Amizuth,azimuth);
+    public void setVRAngle (float Azimuth, float Pitch, float Roll){
+        azimuth = Highpassfilter(Azimuth,azimuth);
+        //azimuth = Azimuth;
         pitch = Highpassfilter(Pitch,pitch);
+        //pitch = Pitch;
         roll = Highpassfilter(Roll,roll);
-        Log.i("Orientation test:", "Azimuth(-z): " + String.valueOf((float) Math.toDegrees(azimuth)) + " Pitch(x): " + String.valueOf((float) Math.toDegrees(pitch)) + " Roll(y): " + String.valueOf((float) Math.toDegrees(roll)));
+        //roll = Roll;
+        //Log.i("Orientation test:", "Azimuth(-z): " + String.valueOf((float) Math.toDegrees(azimuth)) + " Pitch(x): " + String.valueOf((float) Math.toDegrees(pitch)) + " Roll(y): " + String.valueOf((float) Math.toDegrees(roll)));
+    }
+    private void setLookAtVector(){
+        //initial condition is that pointcloud is at the North pole and the North pole is (0, 0, 1) vector
+        //rotated by Azimuth
+        float lookatx = (float)Math.sin(azimuth);
+        float lookaty = 0;
+        float lookatz = (float)Math.cos(azimuth);
+        float phoneheadx = -(float)Math.cos(azimuth);
+        float phoneheady = 0;
+        float phoneheadz = (float)Math.sin(azimuth);
+        //centerx = lookatx;
+        //centery = lookaty;
+        //centerz = lookatz;
+        //upx = 0;
+        //upy = -1;
+        //upz = 0;
+        //rotated by roll  -(roll+90 degree) sin would be -cos and cos would be -sin
+        centerx = (phoneheadx * phoneheadx * (1 + (float)Math.sin(roll)) - (float)Math.sin(roll)) * lookatx + (phoneheadx * phoneheady * (1 + (float)Math.sin(roll)) - phoneheadz * (float)Math.cos(roll)) * lookaty + (phoneheadx * phoneheadz * (1 + (float)Math.sin(roll)) + phoneheady * (float)Math.cos(roll)) * lookatz;
+        centery = (phoneheadx * phoneheady * (1 + (float)Math.sin(roll)) + phoneheadz * (float)Math.cos(roll)) * lookatx + (phoneheady * phoneheady * (1 + (float)Math.sin(roll)) - (float)Math.sin(roll)) * lookaty + (phoneheady * phoneheadz * (1 + (float)Math.sin(roll)) - phoneheadx * (float)Math.cos(roll)) * lookatz;
+        centerz = (phoneheadx * phoneheadz * (1 + (float)Math.sin(roll)) - phoneheady * (float)Math.cos(roll)) * lookatx + (phoneheady * phoneheadz * (1 + (float)Math.sin(roll)) + phoneheadx * (float)Math.cos(roll)) * lookaty + (phoneheadz * phoneheadz * (1 + (float)Math.sin(roll)) - (float)Math.sin(roll)) * lookatz;
+        //upx = centery * phoneheadz - centerz * phoneheady;
+        //upy = centerz * phoneheadx - centerx * phoneheadz;
+        //upz = centerx * phoneheady - centery * phoneheadx;
+        //rotated by pitch (pitch-90 degree) sin would be -cos and cos would be sin
+        upx = (centerx * centerx * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheadx + (centerx * centery * (1 - (float)Math.sin(pitch)) - centerz * (float)Math.cos(pitch)) * phoneheady + (centerx * centerz * (1 - (float)Math.sin(pitch)) + centery * (float)Math.cos(pitch)) * phoneheadz;
+        upy = (centerx * centery * (1 - (float)Math.sin(pitch)) + centerz * (float)Math.cos(pitch)) * phoneheadx + (centery * centery * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheady + (centery * centerz * (1 - (float)Math.sin(pitch)) - centerx * (float)Math.cos(pitch)) * phoneheadz;
+        upz = (centerx * centerz * (1 - (float)Math.sin(pitch)) - centery * (float)Math.cos(pitch)) * phoneheadx + (centery * centerz * (1 - (float)Math.sin(pitch)) + centerx * (float)Math.cos(pitch)) * phoneheady + (centerz * centerz * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheadz;
     }
     private float Highpassfilter(float angle,float preangle){
+        while(angle>preangle+Math.PI)
+            angle-=2*Math.PI;
+        while(angle<preangle-Math.PI)
+            angle+=2*Math.PI;
         float ratio = 0.3f;
         return ratio*angle+(1-ratio)*preangle;
     }

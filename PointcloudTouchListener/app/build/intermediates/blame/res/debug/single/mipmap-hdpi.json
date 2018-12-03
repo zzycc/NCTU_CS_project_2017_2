@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    }
+]

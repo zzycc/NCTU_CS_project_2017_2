@@ -1,0 +1,7 @@
+#Thu Nov 01 21:58:51 CST 2018
+base.0=/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fc458546a3a1a32dd2ce494d6112bc7b2927e330
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_182d892300dc26f15fefbb219ba8078860d0d8c2/classes.dex
+base.1=/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_182d892300dc26f15fefbb219ba8078860d0d8c2
+file.0=/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fc458546a3a1a32dd2ce494d6112bc7b2927e330/classes.dex
