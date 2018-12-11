@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="24"
     build-mode="COLD"
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1541154439022"
+    timestamp="1544554306140"
     token="-3627786007226330006"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="598" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="151" />
     <task
         name="verifier"
-        duration="0" />
+        duration="12" />
+
+    <artifact
+        location="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1541154338097"
+        timestamp="1544540757712"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -66,7 +70,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1541154439022"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1544554306140"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/yuche/Documents/NCTU_CS_project/PointcloudTouchListener/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>

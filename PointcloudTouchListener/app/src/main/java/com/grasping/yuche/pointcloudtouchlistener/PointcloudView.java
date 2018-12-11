@@ -5,6 +5,7 @@ import android.opengl.GLSurfaceView;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.common.base.Preconditions;
 
@@ -27,7 +28,6 @@ import sensor_msgs.PointField;
 
 public class PointcloudView extends GLSurfaceView implements NodeMain{
     private final MyGLRenderer mRenderer;
-
 
     private FloatBuffer vertexBuffer;
     private FloatBuffer colorBuffer;
@@ -71,7 +71,34 @@ public class PointcloudView extends GLSurfaceView implements NodeMain{
                         float x,y;
                         x=event.getX();
                         y=event.getY();
-                        mRenderer.getPoint(x,y);
+                        int height = mRenderer.getViewHeight();
+                        int width = mRenderer.getViewWidth();
+                        if(x<(float)width/10.0f && y<(float)height/5.0f){
+                            mRenderer.seteye(0.0f,0.0f,0.0f);
+                        }
+                        else if(x<(float)width/10.0f && y>(float)height/5.0f*4.0f){
+                            mRenderer.setMode((mRenderer.getMode()+2)%3);
+                        }
+                        else if(x>(float)width/10.0f*9.0f&& y>(float)height/5.0f*4.0f){
+                            mRenderer.setMode((mRenderer.getMode()+1)%3);
+                        }
+                        else {
+                            if(mRenderer.getMode()==2)
+                                mRenderer.getPoint(x, y);
+                            if(mRenderer.getMode()==1){
+                                if(x<(float)width/4)
+                                    mRenderer.movePosition(3);
+                                else if(x>(float)width/4*3)
+                                    mRenderer.movePosition(4);
+                                else if(y<(float)height/2)
+                                    mRenderer.movePosition(1);
+                                else if(y>(float)height/2)
+                                    mRenderer.movePosition(2);
+                            }
+                        }
+                        Log.i("ontouchMessage", "height: "+String.valueOf(height)+" width: "+String.valueOf(width));
+                        Log.i("ontouchMessage", "x: "+String.valueOf(x)+" y: "+String.valueOf(y));
+                        Log.i("ontouchMessage", "mode: "+String.valueOf(mRenderer.getMode()));
                         break;
                     default:
                         break;
@@ -79,6 +106,7 @@ public class PointcloudView extends GLSurfaceView implements NodeMain{
                 return true;
             }
         });
+
     }
 
     public void checkPointCloudData(PointCloud2 pointcloud){

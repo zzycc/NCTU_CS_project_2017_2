@@ -20,11 +20,12 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private int ViewHeight;
     private int ViewWidth;
 
+    private int mode; //0:VR 1:move 2:selection
 
     private Vertices pc;
     private int vbcapacity;//pointcloud's vertices num *xyzw
     private float azimuth, pitch, roll; //The three angle value is in radian
-    private float centerx,centery,centerz,upx,upy,upz;
+    private float eyex,eyey,eyez,centerx,centery,centerz,upx,upy,upz;
 
     public void  onSurfaceCreated(GL10 unused, EGLConfig config){
         //set the background frame color
@@ -34,6 +35,16 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         azimuth = 0.0f;
         pitch = 0.0f;
         roll = 0.0f;
+        mode = 0;
+        eyex = 0.0f;
+        eyey = 0.0f;
+        eyez = 0.0f;
+        centerx = 0.0f;
+        centery = 0.0f;
+        centerz = 0.0f;
+        upx = 0.0f;
+        upy = 0.0f;
+        upz = 0.0f;
     }
 
     public void onDrawFrame(GL10 unused){
@@ -41,11 +52,15 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
         GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT);
         // Set the camera position (View matrix)
-        setLookAtVector();
-        Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, centerx, centery, centerz, upx, upy, upz);
-        //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, centerx, centery, centerz, 0.0f, -1.0f, 0.0f);
-        //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, 0.0f, 0.0f, 3.0f, 0.0f, -1.0f, 0.0f);
-
+        if(mode==0) {
+            setLookAtVector();
+            Matrix.setLookAtM(mViewMatrix, 0, eyex, eyey, eyez, centerx+eyex, centery+eyey, centerz+eyez, upx, upy, upz);
+            //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, centerx, centery, centerz, 0.0f, -1.0f, 0.0f);
+            //Matrix.setLookAtM(mViewMatrix, 0, 0, 0, 0.0f, 0.0f, 0.0f, 3.0f, 0.0f, -1.0f, 0.0f);
+        }
+        else{
+            Matrix.setLookAtM(mViewMatrix, 0, eyex, eyey, eyez, centerx+eyex, centery+eyey, centerz+eyez, upx, upy, upz);
+        }
         // Calculate the projection and view transformation
         Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
 
@@ -61,7 +76,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // this projection matrix is applied to object coordinates
         // in the onDrawFrame() method
-        Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -0.2f, 0.2f, 0.5f, 3f);
+        Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -0.2f, 0.2f, 0.3f, 3f);
     }
 
     public static int loadShader(int type, String shaderCode){
@@ -79,17 +94,25 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     public void setPc(FloatBuffer vb,FloatBuffer cb){
         pcWorldCoord = new float[vb.capacity()];
-        pcClipCoord = new float[vb.capacity()];
         vb.get(pcWorldCoord);
         vb.position(0);
         this.pc.setVertexBuffer(vb);
         this.pc.setColorBuffer(cb);
         vbcapacity=vb.capacity();
     }
-    public void getPoint(float touchx,float touchy){//not efficient enough; might need to revise
+    public void setMode(int m){
+        mode = m;
+        if(m==2)
+            updateClipCoord();
+    }
+    public int getMode(){return mode;}
+    public void updateClipCoord(){//not efficient enough; might need to revise
         //calculate the ClipCoord
+        pcClipCoord = new float[pcWorldCoord.length];
         for(int i=0 ; i<vbcapacity;i+=16)
             Matrix.multiplyMM(pcClipCoord,i,mMVPMatrix,0,pcWorldCoord,i);
+    }
+    public void getPoint(float touchx,float touchy){
         Log.i("Point", "x: "+String.valueOf(touchx)+" y: "+String.valueOf(touchy));
         if(pcWorldCoord!=null&&pcClipCoord!=null){
             float ndcx,ndcy;
@@ -123,6 +146,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
             Log.i("WorldCoordinate point", "WCx: "+String.valueOf(pcWorldCoord[targetindex])+" WCy: "+String.valueOf(pcWorldCoord[targetindex+1])+" WCz: "+String.valueOf(pcWorldCoord[targetindex+2])+" WCw: "+String.valueOf(pcWorldCoord[targetindex+3]));
         }
     }
+
+    public int getViewHeight(){return ViewHeight;}
+    public int getViewWidth(){return ViewWidth;}
+
     public void setVRAngle (float Azimuth, float Pitch, float Roll){
         azimuth = Highpassfilter(Azimuth,azimuth);
         //azimuth = Azimuth;
@@ -158,6 +185,64 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         upx = (centerx * centerx * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheadx + (centerx * centery * (1 - (float)Math.sin(pitch)) - centerz * (float)Math.cos(pitch)) * phoneheady + (centerx * centerz * (1 - (float)Math.sin(pitch)) + centery * (float)Math.cos(pitch)) * phoneheadz;
         upy = (centerx * centery * (1 - (float)Math.sin(pitch)) + centerz * (float)Math.cos(pitch)) * phoneheadx + (centery * centery * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheady + (centery * centerz * (1 - (float)Math.sin(pitch)) - centerx * (float)Math.cos(pitch)) * phoneheadz;
         upz = (centerx * centerz * (1 - (float)Math.sin(pitch)) - centery * (float)Math.cos(pitch)) * phoneheadx + (centery * centerz * (1 - (float)Math.sin(pitch)) + centerx * (float)Math.cos(pitch)) * phoneheady + (centerz * centerz * (1 - (float)Math.sin(pitch)) + (float)Math.sin(pitch)) * phoneheadz;
+    }
+    public void seteye(float x,float y,float z){
+        eyex = x;
+        eyey = y;
+        eyez = z;
+    }
+    public void movePosition(int i){
+        //1: forward 2:backward 3:left 4: right
+        float movx,movy,movz,vlength;
+        if(i==1){
+            movx = centerx;
+            movy = centery;
+            movz = centerz;
+            vlength = (float)Math.sqrt((double)(movx*movx+movy*movy+movz*movz));
+            movx = movx/vlength*0.1f;
+            movy = movy/vlength*0.1f;
+            movz = movz/vlength*0.1f;
+            eyex += movx;
+            eyey += movy;
+            eyez += movz;
+        }
+        if(i==2){
+            movx = -centerx;
+            movy = -centery;
+            movz = -centerz;
+            vlength = (float)Math.sqrt((double)(movx*movx+movy*movy+movz*movz));
+            movx = movx/vlength*0.1f;
+            movy = movy/vlength*0.1f;
+            movz = movz/vlength*0.1f;
+            eyex += movx;
+            eyey += movy;
+            eyez += movz;
+
+        }
+        if(i==3){
+            movx = upy*centerz - upz*centery;
+            movy = upz*centerx - upx*centerz;
+            movz = upx*centery - upy*centerx;
+            vlength = (float)Math.sqrt((double)(movx*movx+movy*movy+movz*movz));
+            movx = movx/vlength*0.1f;
+            movy = movy/vlength*0.1f;
+            movz = movz/vlength*0.1f;
+            eyex += movx;
+            eyey += movy;
+            eyez += movz;
+        }
+        if(i==4){
+            movx = -upy*centerz + upz*centery;
+            movy = -upz*centerx + upx*centerz;
+            movz = -upx*centery + upy*centerx;
+            vlength = (float)Math.sqrt((double)(movx*movx+movy*movy+movz*movz));
+            movx = movx/vlength*0.1f;
+            movy = movy/vlength*0.1f;
+            movz = movz/vlength*0.1f;
+            eyex += movx;
+            eyey += movy;
+            eyez += movz;
+        }
     }
     private float Highpassfilter(float angle,float preangle){
         while(angle>preangle+Math.PI)
